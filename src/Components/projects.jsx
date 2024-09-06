@@ -26,7 +26,9 @@ export default function Projects() {
 
   return (
     <section className="projects">
-      <h2>My projects</h2>
+      <div className="project-title">
+        <h2>My projects</h2>
+      </div>
       {loading ? (
         <p>Loading...</p>
       ) : (
