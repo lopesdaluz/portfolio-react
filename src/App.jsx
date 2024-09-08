@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Components/header";
 import Main from "./Components/main";
 import Projects from "./Components/projects";
+import Contact from "./Components/contact";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Header />
       <Main />
       <Projects />
+      <Contact />
     </>
   );
 }

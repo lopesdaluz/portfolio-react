@@ -25,7 +25,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="project-title">
         <h2>My projects</h2>
       </div>
