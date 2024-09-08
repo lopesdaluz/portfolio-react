@@ -9,12 +9,13 @@ export default function Main() {
         <img src={myPhoto} alt="Tatiana" className="main-image"></img>
         <h2>Welcome to my portfolio</h2>
         <p>
-          Hi, Im Tatiana. Im a full stack developer. Lets build something
-          amazing together! I am a driven and passionated for full stack and
-          based in Sweden. Keen on breaking into the job market to continue my
-          professional growth. Eager to learn new things and contribute to
-          innovative projects, I aspire to bring my skills and enthusiasm to a
-          dynamic work environment.
+          Hi, Im Tatiana, a Full Stack Developer based in Sweden. With a passion
+          for crafting innovative solutions and a relentless drive for
+          professional growth, Im eager to bring my diverse skill set to dynamic
+          teams and exciting projects. I thrive on learning new technologies,
+          solving complex problems, and contributing to cutting-edge
+          applications. Lets connect and explore how we can build something
+          extraordinary together!
         </p>
         <a href="#contacts" className="btn">
           Get in touch
