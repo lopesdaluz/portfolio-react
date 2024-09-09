@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b); 
-  color: #fff;
+  background: linear-gradient(to right, #d65d45, #db6e50); 
+  color: #f0f0f0; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
@@ -28,7 +28,7 @@
 }
 
 .header-nav a {
-  color: #fff;
+  color: #f0f0f0; 
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s, transform 0.3s; 
