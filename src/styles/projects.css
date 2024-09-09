@@ -40,12 +40,16 @@
   white-space: normal;
   /* text-overflow: ellipsis; */
   max-height: 100%;
+  color: #444;
+  font-size: 1rem;
   
 }
 
 
 .project h3 {
   margin-top: 0;
+  font-size: 1.5rem;
+  color: #222;
 }
 
 /* .btn {
@@ -90,4 +94,15 @@
 /*edge*/
 .project p {
   -ms-overflow-style: scrollbar; 
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: calc(100% - 2rem);
+    height: auto;
+  }
+
+  .projects-list {
+    flex-direction: column;
+  }
 }
