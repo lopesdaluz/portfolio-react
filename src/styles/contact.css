@@ -29,6 +29,29 @@ border: 1px solid;
 border-radius: 5px;
 }
 
+.contact-links{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-link{
+  font-size: 30px;
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-link:hover{
+  color: #003f7f; 
+  transform: scale(1.1);
+}
+
+.contact-link:focus{
+  outline: 2px solid  #ff7e5f ;
+  outline-offset: 3px;
+}
+
 /* .contact button{
   padding: 0.75rem;
   color: white;
