@@ -82,3 +82,24 @@
   transform: scale(1.05);
 }
 
+
+
+
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .slick-slide {
+    padding: 0; 
+  }
+
+
+}
+
+
+@media (max-width: 374px) {
+  .slick-slide {
+    padding: 0; 
+  }
+
+  
+}
