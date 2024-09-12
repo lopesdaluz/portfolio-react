@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import "../styles/projects.css";
 import axios from "axios";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Projects() {
   const [repos, setRepos] = useState([]);
@@ -24,6 +28,31 @@ export default function Projects() {
     fetchRepos();
   }, []);
 
+  const sliderSettings = {
+    dots: true,
+    infiinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpont: 1024,
+        settings: {
+          slidestoShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpont: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="projects" id="projects">
       <div className="project-title">
@@ -32,14 +61,14 @@ export default function Projects() {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div className="projects-list">
+        <Slider {...sliderSettings}>
           {repos.map((repo) => (
-            <div key={repo.id} className="project">
+            <div key={repo.id} className="projec-slide">
               <h3>{repo.name}</h3>
               <p>{repo.description || "No description available."}</p>
               <a
                 href={repo.html_url}
-                className="btn"
+                className="project-btn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -47,7 +76,7 @@ export default function Projects() {
               </a>
             </div>
           ))}
-        </div>
+        </Slider>
       )}
     </section>
   );
