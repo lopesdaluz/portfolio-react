@@ -18,6 +18,7 @@ export default function Projects() {
           "https://api.github.com/users/lopesdaluz/repos"
         );
         setRepos(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching repositories:", error);
         setError("Failed to load projects");
@@ -30,28 +31,31 @@ export default function Projects() {
 
   const sliderSettings = {
     dots: true,
-    infiinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
-        breakpont: 1024,
+        breakpoint: 1024,
         settings: {
-          slidestoShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
         },
       },
       {
-        breakpont: 768,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
       {
-        breakpoint: 375,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -70,7 +74,7 @@ export default function Projects() {
       ) : (
         <Slider {...sliderSettings}>
           {repos.map((repo) => (
-            <div key={repo.id} className="projec-slide">
+            <section key={repo.id} className="projec-slide">
               <h3>{repo.name}</h3>
               <p>{repo.description || "No description available."}</p>
               <a
@@ -81,7 +85,7 @@ export default function Projects() {
               >
                 view project
               </a>
-            </div>
+            </section>
           ))}
         </Slider>
       )}

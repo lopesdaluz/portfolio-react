@@ -19,6 +19,7 @@
   border: solid 1px #ddd; 
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
 }
 
 .projec-slide:hover {
@@ -36,6 +37,14 @@
   display: block;
   box-sizing: border-box;
  
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
 .slick-track {
