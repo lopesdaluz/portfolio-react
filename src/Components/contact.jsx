@@ -1,10 +1,10 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import "../styles/contact.css";
 
 export default function Contact() {
   return (
     <section className="contact" id="contacts">
-      <div className="contact-title">
+      {/* <div className="contact-title">
         <h2>Contact Me</h2>
       </div>
       <form name="contact" method="POST" data-netlify="true">
@@ -22,7 +22,7 @@ export default function Contact() {
         <button type="submit" className="btn">
           Send Message
         </button>
-      </form>
+      </form> */}
       <div className="links">
         <h2>Links</h2>
         <div className="contact-links">
@@ -41,6 +41,13 @@ export default function Contact() {
             className="contact-link"
           >
             <FaGithub aria-label="GitHub" />
+          </a>
+          <a
+            href="mailto:tati_daluz_89@hotmail.com"
+            className="contact-link"
+            aria-label="Email"
+          >
+            <FaEnvelope />
           </a>
         </div>
       </div>
