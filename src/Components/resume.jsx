@@ -10,7 +10,7 @@ export default function Resume() {
       <div className="resume-images">
         <div className="resume-item">
           <a href="/Software Developer.pdf" download>
-            <img src="/Skärmbild (1966).png" alt="Resume Screenshot"></img>
+            <img src="/software dev.png" alt="Resume Screenshot"></img>
             <p>Resume</p>
           </a>
         </div>
