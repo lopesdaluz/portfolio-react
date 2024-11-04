@@ -10,11 +10,11 @@ export default function Resume() {
       <div className="resume-images">
         <div className="resume-item">
           <a href="/Software Developer.pdf" download>
-            <img src="/software dev.png" alt="Resume Screenshot"></img>
+            <img src="/Software dev.png" alt="Resume Screenshot"></img>
             <p>Resume</p>
           </a>
         </div>
-        <div className="resume-item">
+        {/* <div className="resume-item">
           <a href="/Personal Letter-Software developer.pdf" download>
             <img
               src="/Skärmbild (1968).png"
@@ -22,7 +22,7 @@ export default function Resume() {
             ></img>
             <p>Personal Letter</p>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
