@@ -51,7 +51,7 @@ export default function Resume() {
           {/* Download Button - Centered below both images */}
           <div className="md:col-span-2 flex justify-center mt-8">
             <a
-              href="./Softwarre developer.pdf"
+              href="/resume2025.pdf"
               download
               className="inline-flex items-center px-6 py-3 bg-primary/20 
                        hover:bg-primary/30 text-primary rounded-lg 
