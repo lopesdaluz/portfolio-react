@@ -14,9 +14,11 @@ export default function Resume() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
           {/* Page 1 */}
           <div className="w-full max-w-md mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6
+            <div
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-6
                          hover:bg-white/10 transition-all duration-300 
-                         border border-white/10 text-center">
+                         border border-white/10 text-center"
+            >
               <div className="aspect-w-16 aspect-h-9 mb-4 overflow-hidden rounded-lg">
                 <img
                   src="./resume1.png"
@@ -30,9 +32,11 @@ export default function Resume() {
 
           {/* Page 2 */}
           <div className="w-full max-w-md mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6
+            <div
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-6
                          hover:bg-white/10 transition-all duration-300 
-                         border border-white/10 text-center">
+                         border border-white/10 text-center"
+            >
               <div className="aspect-w-16 aspect-h-9 mb-4 overflow-hidden rounded-lg">
                 <img
                   src="./resume2.png"
@@ -47,7 +51,7 @@ export default function Resume() {
           {/* Download Button - Centered below both images */}
           <div className="md:col-span-2 flex justify-center mt-8">
             <a
-              href="./resume.pdf"
+              href="./Softwarre developer.pdf"
               download
               className="inline-flex items-center px-6 py-3 bg-primary/20 
                        hover:bg-primary/30 text-primary rounded-lg 
