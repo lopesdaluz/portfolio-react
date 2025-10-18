@@ -18,30 +18,31 @@ export default function Main() {
 
         <div className="space-y-6 text-gray-300">
           <p className="text-lg leading-relaxed">
-            I'm Tatiana, a Full Stack Developer based in Gothenburg, Sweden. With a
-            lifelong interest in technology, I decided to fully commit to my
-            passion in 2022, enrolling in the developer program at IT Högskolan in
-            Gothenburg.
+            I am Tatiana, a Full Stack Developer based in Gothenburg, Sweden.
+            With a lifelong interest in technology, I decided to fully commit to
+            my passion in 2022, enrolling in the developer program at IT
+            Högskolan in Gothenburg.
           </p>
 
           <p className="leading-relaxed">
-            During my time there, I had the opportunity to complete an internship
-            at Junio AB, where my team and I developed a school platform that
-            allows teachers to seamlessly manage and share educational materials
-            with their students.
+            During my time there, I had the opportunity to complete an
+            internship at Junio AB, where my team and I developed a school
+            platform that allows teachers to seamlessly manage and share
+            educational materials with their students.
           </p>
 
           <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm">
             <p className="leading-relaxed">
               Coming from a background rich in customer-focused roles, I bring a
-              unique perspective to software development. My ability to understand
-              customer needs, combined with my technical expertise, allows me to
-              create solutions that are not only functional but also user-centric.
+              unique perspective to software development. My ability to
+              understand customer needs, combined with my technical expertise,
+              allows me to create solutions that are not only functional but
+              also user-centric.
             </p>
           </div>
 
           <p className="leading-relaxed">
-            I'm particularly passionate about accessibility and inclusivity in
+            I am particularly passionate about accessibility and inclusivity in
             tech, which is why WCAG (Web Content Accessibility Guidelines) is a
             key focus for me.
           </p>
