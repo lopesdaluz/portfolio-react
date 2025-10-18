@@ -9,11 +9,14 @@ export default function Main() {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <img
-            src={myPhoto}
-            alt="Tatiana"
-            className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto mb-8 object-cover border-4 border-primary/30 shadow-lg shadow-primary/10"
-          />
+          <div className="w-48 h-48 md:w-56 md:h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/10">
+            <img
+              src={myPhoto}
+              alt="Tatiana"
+              className="w-full h-full object-contain object-center scale-110"
+            />
+          </div>
+
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Welcome to my portfolio
           </h2>

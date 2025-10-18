@@ -19,7 +19,6 @@ export default function Header() {
     // Add event listener when component mounts
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup function (React way of removing event listeners)
     return () => window.removeEventListener("scroll", handleScroll);
   }, []); // Empty dependency array means this only runs once on mount
 
