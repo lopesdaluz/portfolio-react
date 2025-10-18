@@ -16,6 +16,7 @@ import {
   SiTypescript,
   SiPostgresql,
   SiDocker,
+  SiTailwindcss,
   SiNestjs,
 } from "react-icons/si";
 
@@ -27,7 +28,6 @@ const technologies = [
   { icon: FaNodeJs, name: "Node.js", color: "hover:text-green-500" },
   { icon: SiMongodb, name: "MongoDB", color: "hover:text-green-600" },
   { icon: SiExpress, name: "Express.js", color: "hover:text-gray-400" },
-  { icon: SiNestjs, name: "NestJS", color: "hover:text-red-600" },
   { icon: FaGitAlt, name: "Git", color: "hover:text-orange-600" },
   { icon: FaGithub, name: "GitHub", color: "hover:text-purple-400" },
   { icon: SiTypescript, name: "TypeScript", color: "hover:text-blue-600" },
@@ -35,6 +35,8 @@ const technologies = [
   { icon: FaNpm, name: "npm", color: "hover:text-red-500" },
   { icon: SiDocker, name: "Docker", color: "hover:text-blue-500" },
   { icon: FaVuejs, name: "Vue.js", color: "hover:text-emerald-500" },
+  { icon: SiTailwindcss, name: "Tailwind CSS", color: "hover:text-sky-400" },
+  { icon: SiNestjs, name: "NestJS", color: "hover:text-red-600" },
 ];
 
 export default function Skills() {
@@ -47,13 +49,13 @@ export default function Skills() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12">
           {technologies.map((tech) => (
             <div
               key={tech.name}
               className="group flex flex-col items-center p-4 rounded-xl 
-                        bg-white/5 backdrop-blur-sm hover:bg-white/10 
-                        transition-all duration-300 ease-in-out"
+                         bg-white/5 backdrop-blur-sm hover:bg-white/10 
+                         transition-all duration-300 ease-in-out"
             >
               <tech.icon
                 className={`w-12 h-12 mb-4 transition-all duration-300 
