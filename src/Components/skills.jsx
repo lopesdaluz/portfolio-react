@@ -19,13 +19,22 @@ import {
   SiTailwindcss,
   SiNestjs,
   SiFigma,
+  SiReact,
+  SiTestinglibrary,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb"; // ikon för React Native
+import { MdOutlineScience } from "react-icons/md"; // ikon för TDD
 
 const technologies = [
   { icon: FaHtml5, name: "HTML5", color: "hover:text-orange-500" },
   { icon: FaCss3Alt, name: "CSS3", color: "hover:text-blue-500" },
   { icon: FaJsSquare, name: "JavaScript", color: "hover:text-yellow-400" },
   { icon: FaReact, name: "React", color: "hover:text-cyan-400" },
+  {
+    icon: TbBrandReactNative,
+    name: "React Native",
+    color: "hover:text-indigo-400",
+  },
   { icon: FaNodeJs, name: "Node.js", color: "hover:text-green-500" },
   { icon: SiMongodb, name: "MongoDB", color: "hover:text-green-600" },
   { icon: SiExpress, name: "Express.js", color: "hover:text-gray-400" },
@@ -39,6 +48,7 @@ const technologies = [
   { icon: SiTailwindcss, name: "Tailwind CSS", color: "hover:text-sky-400" },
   { icon: SiNestjs, name: "NestJS", color: "hover:text-red-600" },
   { icon: SiFigma, name: "Figma", color: "hover:text-pink-400" },
+  { icon: MdOutlineScience, name: "TDD", color: "hover:text-yellow-300" },
 ];
 
 export default function Skills() {
