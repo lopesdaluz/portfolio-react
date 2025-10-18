@@ -18,6 +18,7 @@ import {
   SiDocker,
   SiTailwindcss,
   SiNestjs,
+  SiFigma,
 } from "react-icons/si";
 
 const technologies = [
@@ -37,6 +38,7 @@ const technologies = [
   { icon: FaVuejs, name: "Vue.js", color: "hover:text-emerald-500" },
   { icon: SiTailwindcss, name: "Tailwind CSS", color: "hover:text-sky-400" },
   { icon: SiNestjs, name: "NestJS", color: "hover:text-red-600" },
+  { icon: SiFigma, name: "Figma", color: "hover:text-pink-400" },
 ];
 
 export default function Skills() {
