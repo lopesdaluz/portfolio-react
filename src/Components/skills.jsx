@@ -16,6 +16,7 @@ import {
   SiTypescript,
   SiPostgresql,
   SiDocker,
+  SiNestjs,
 } from "react-icons/si";
 
 const technologies = [
@@ -26,6 +27,7 @@ const technologies = [
   { icon: FaNodeJs, name: "Node.js", color: "hover:text-green-500" },
   { icon: SiMongodb, name: "MongoDB", color: "hover:text-green-600" },
   { icon: SiExpress, name: "Express.js", color: "hover:text-gray-400" },
+  { icon: SiNestjs, name: "NestJS", color: "hover:text-red-600" },
   { icon: FaGitAlt, name: "Git", color: "hover:text-orange-600" },
   { icon: FaGithub, name: "GitHub", color: "hover:text-purple-400" },
   { icon: SiTypescript, name: "TypeScript", color: "hover:text-blue-600" },
@@ -44,7 +46,7 @@ export default function Skills() {
             Tech Stack
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
           {technologies.map((tech) => (
             <div
@@ -53,9 +55,9 @@ export default function Skills() {
                         bg-white/5 backdrop-blur-sm hover:bg-white/10 
                         transition-all duration-300 ease-in-out"
             >
-              <tech.icon 
+              <tech.icon
                 className={`w-12 h-12 mb-4 transition-all duration-300 
-                           text-gray-400 ${tech.color} group-hover:scale-110`} 
+                           text-gray-400 ${tech.color} group-hover:scale-110`}
               />
               <span className="text-sm text-gray-400 group-hover:text-white transition-colors duration-300">
                 {tech.name}
