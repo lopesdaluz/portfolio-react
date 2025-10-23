@@ -1,42 +1,42 @@
-
-
 .projects {
   padding: 2rem;
-  
 }
 
 .project-title {
   text-align: center;
   margin-bottom: 3rem;
-  color: #333; 
+  color: #333;
 }
 
 .projec-slide {
   padding: 1rem;
   box-sizing: border-box;
-  background: linear-gradient(to right, rgba(255, 126, 95, 0.7), rgba(254, 180, 123, 0.7));
+  background: linear-gradient(
+    to right,
+    rgba(255, 126, 95, 0.7),
+    rgba(254, 180, 123, 0.7)
+  );
   border-radius: 20px;
-  border: solid 1px #ddd; 
+  border: solid 1px #ddd;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 2rem;
 }
 
 .projec-slide:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .slick-slide {
   padding: 1rem;
 }
 
-
 .slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
- 
+
   .slick-track {
     position: relative;
     top: 0;
@@ -44,17 +44,15 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 }
 
 .slick-track {
   display: flex;
   align-items: center;
-  
 }
 
 .slick-dots {
- 
   left: 50%;
   transform: translateX(-50%);
 }
@@ -65,11 +63,11 @@
 }
 
 .slick-dots li.slick-active button {
-  background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
 .slick-dots li button:hover {
-  background-color: #bbb; 
+  background-color: #bbb;
 }
 
 .project-btn {
@@ -91,25 +89,14 @@
   transform: scale(1.05);
 }
 
-
-
-
-
-
 @media (min-width: 375px) and (max-width: 767px) {
   .slick-slide {
-    padding: 0; 
+    padding: 0;
   }
-
-
 }
-
 
 @media (max-width: 374px) {
   .slick-slide {
-    padding: 0; 
-  
+    padding: 10;
   }
-
-  
 }
