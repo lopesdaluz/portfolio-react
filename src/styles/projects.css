@@ -97,6 +97,6 @@
 
 @media (max-width: 374px) {
   .slick-slide {
-    padding: 10;
+    padding: 0;
   }
 }
