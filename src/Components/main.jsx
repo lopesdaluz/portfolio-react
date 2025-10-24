@@ -17,17 +17,17 @@ export default function Main() {
             />
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Welcome to my portfolio
-          </h2>
+          </h2> */}
         </div>
 
         <div className="space-y-6 text-gray-300">
           <p className="text-lg leading-relaxed">
-            I am Tatiana, a Full Stack Developer based in Gothenburg, Sweden.
-            With a lifelong interest in technology, I decided to fully commit to
-            my passion in 2022, enrolling in the developer program at IT
-            Högskolan in Gothenburg.
+            I am a Full Stack Developer based in Gothenburg, Sweden. With a
+            lifelong interest in technology, I decided to fully commit to my
+            passion in 2022, enrolling in the developer program at IT Högskolan
+            in Gothenburg.
           </p>
 
           <p className="leading-relaxed">

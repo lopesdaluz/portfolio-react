@@ -25,6 +25,7 @@ import Projects from "./Components/projects";
 import Contact from "./Components/contact";
 import Skills from "./Components/skills";
 import Resume from "./Components/resume";
+import IntroSection from "./Components/introsection";
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
         {/* Add padding-top to account for fixed header */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <main className="space-y-24 py-16">
+            <IntroSection />
             <Main />
             <Skills />
             <Projects />

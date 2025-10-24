@@ -39,7 +39,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              {["About", "Skills", "Projects", "Resume", "Contact"].map(
+              {["About", "Skills", "Projects" /*, "Resume"*/, "Contact"].map(
                 (item) => (
                   <li key={item}>
                     <a
@@ -67,7 +67,7 @@ export default function Header() {
         {isMenuOpen && (
           <nav className="md:hidden">
             <ul className="px-2 pt-2 pb-3 space-y-1">
-              {["About", "Skills", "Projects", "Resume", "Contact"].map(
+              {["About", "Skills", "Projects" /*, "Resume"*/, "Contact"].map(
                 (item) => (
                   <li key={item}>
                     <a
