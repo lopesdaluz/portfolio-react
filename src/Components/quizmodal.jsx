@@ -135,8 +135,8 @@ export default function Quizmodal({ onClose }) {
             </h3>
             <div className="mb-4 text-gray-700">
               <p>
-                I speak 4 languages and my parents are from the beautiful Cape
-                Verde Islands.
+                I speak Swedish, English, Portuguese, and Creole. My parents are
+                from the beautiful Cape Verde Islands.
                 <br />
                 I’ve visited New York City more than 20 times, and I have 3
                 sisters.
