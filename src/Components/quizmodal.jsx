@@ -37,8 +37,9 @@ const questions = [
 ];
 
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-export default function Quizmodal({ onClose }) {
+function Quizmodal({ onClose }) {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(Array(questions.length).fill(null));
   const [showResult, setShowResult] = useState(false);
@@ -69,7 +70,7 @@ export default function Quizmodal({ onClose }) {
               {questions[current].question}
             </div>
             <div className="grid gap-3">
-              {questions[current].options.map((option, idx) => (
+              {questions[current].options.map((option) => (
                 <button
                   key={option}
                   className={`w-full py-2 px-4 rounded-lg border transition-colors duration-200
@@ -158,3 +159,9 @@ export default function Quizmodal({ onClose }) {
     </div>
   );
 }
+
+Quizmodal.propTypes = {
+  onClose: PropTypes.func.isRequired,
+};
+
+export default Quizmodal;
