@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import QuizModal from "./quizmodal";
 
 export default function Header() {
   // State for controlling menu and scroll position
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
 
   // React way of handling scroll events using useEffect
   useEffect(() => {
@@ -30,7 +32,12 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold">Tatiana</h1>
+              <button
+                className="intro-btn text-base font-semibold px-4 py-1"
+                onClick={() => setIsQuizOpen(true)}
+              >
+                Get to know me
+              </button>
             </div>
             {/* Desktop Navigation */}
             <nav className="hidden md:block">
@@ -77,6 +84,7 @@ export default function Header() {
           </nav>
         </div>
       )}
+      {isQuizOpen && <QuizModal onClose={() => setIsQuizOpen(false)} />}
     </>
   );
 }
