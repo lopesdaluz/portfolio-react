@@ -22,7 +22,7 @@ const questions = [
   {
     question: "What is my strongest trait?",
     options: [
-      "I am always on time",
+      "I am a team player",
       "I don't give up on solving problems no matter how complex they are",
       "I am a fast learner",
       "I am very organized",
@@ -141,7 +141,7 @@ export default function Quizmodal({ onClose }) {
                 I’ve visited New York City more than 20 times, and I have 3
                 sisters.
                 <br />
-                My strongest traits are: always on time, never give up on
+                My strongest traits are: I am a team player, never give up on
                 solving problems, fast learner, and very organized.
                 <br />I love challenges and always strive to find solutions!
               </p>
