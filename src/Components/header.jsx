@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import QuizModal from "./QuizModal";
+import QuizModal from "./QuizModal.jsx";
 
 export default function Header() {
   // State for controlling menu and scroll position
