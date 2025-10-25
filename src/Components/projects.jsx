@@ -10,12 +10,22 @@ export default function Projects() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const featured = [
+      "memory-match-game",
+      "BlackFriday-React",
+      "StarWars",
+      "PallyCopy",
+    ];
     const fetchRepos = async () => {
       try {
         const response = await axios.get(
           "https://api.github.com/users/lopesdaluz/repos"
         );
-        setRepos(response.data);
+        // Filter only featured repos
+        const filtered = response.data.filter((repo) =>
+          featured.includes(repo.name)
+        );
+        setRepos(filtered);
       } catch (error) {
         console.error("Error fetching repositories:", error);
         setError("Failed to load projects");
@@ -79,10 +89,12 @@ export default function Projects() {
             <Slider {...sliderSettings} className="project-slider">
               {repos.map((repo) => (
                 <div key={repo.id} className="p-4">
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 h-full 
-                               hover:bg-white/10 transition-all duration-300 border border-white/10">
+                  <div
+                    className="bg-white/5 backdrop-blur-sm rounded-xl p-6 h-full 
+                               hover:bg-white/10 transition-all duration-300 border border-white/10"
+                  >
                     <h3 className="text-xl font-semibold text-white mb-3 capitalize">
-                      {repo.name.replace(/-/g, ' ')}
+                      {repo.name.replace(/-/g, " ")}
                     </h3>
                     <p className="text-gray-400 mb-4 line-clamp-3">
                       {repo.description || "No description available."}
