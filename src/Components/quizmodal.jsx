@@ -39,7 +39,7 @@ const questions = [
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-function Quizmodal({ onClose }) {
+function QuizModal({ onClose }) {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(Array(questions.length).fill(null));
   const [showResult, setShowResult] = useState(false);
@@ -160,8 +160,8 @@ function Quizmodal({ onClose }) {
   );
 }
 
-Quizmodal.propTypes = {
+QuizModal.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export default Quizmodal;
+export default QuizModal;
