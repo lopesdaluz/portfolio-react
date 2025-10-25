@@ -66,14 +66,24 @@ export default function Header() {
       </header>
       {/* Mobile menu and overlay rendered outside header for full screen coverage */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-gray-900/60 backdrop-blur-sm flex items-start justify-start">
-          <nav className="w-2/3 max-w-xs bg-gray-900 rounded-r-xl shadow-lg p-6 mt-16 md:hidden">
-            <ul className="space-y-4">
+        <div className="fixed inset-0 z-40 flex items-center justify-center">
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/70 via-cyan-500/60 to-gray-900/80 backdrop-blur-md transition-opacity duration-300"></div>
+          {/* Animated menu panel */}
+          <nav className="relative w-4/5 max-w-sm bg-white rounded-2xl shadow-2xl p-8 flex flex-col items-center animate-slideIn md:hidden">
+            <button
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-3xl font-bold"
+              onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              ×
+            </button>
+            <ul className="w-full mt-8 space-y-6">
               {["About", "Skills", "Projects", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="block text-lg text-gray-300 hover:text-white px-3 py-2"
+                    className="block w-full text-xl font-semibold text-gray-800 hover:text-blue-500 px-6 py-3 rounded-lg transition-colors duration-200 text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item}
@@ -82,6 +92,15 @@ export default function Header() {
               ))}
             </ul>
           </nav>
+          <style>{`
+            @keyframes slideIn {
+              0% { transform: translateY(-40px) scale(0.95); opacity: 0; }
+              100% { transform: translateY(0) scale(1); opacity: 1; }
+            }
+            .animate-slideIn {
+              animation: slideIn 1s cubic-bezier(0.4,0,0.2,1) forwards;
+            }
+          `}</style>
         </div>
       )}
       {isQuizOpen && <QuizModal onClose={() => setIsQuizOpen(false)} />}
