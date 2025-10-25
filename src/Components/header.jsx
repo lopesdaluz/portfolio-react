@@ -56,10 +56,46 @@ export default function Header() {
             </nav>
             {/* Mobile menu button */}
             <button
-              className="md:hidden"
+              className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Open menu"
             >
-              Menu
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-8 h-8 text-gray-700"
+              >
+                <line
+                  x1="4"
+                  y1="7"
+                  x2="20"
+                  y2="7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="4"
+                  y1="12"
+                  x2="20"
+                  y2="12"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <line
+                  x1="4"
+                  y1="17"
+                  x2="20"
+                  y2="17"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
             </button>
           </div>
         </div>
