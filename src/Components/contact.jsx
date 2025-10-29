@@ -1,6 +1,10 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Tatiana | Contact";
+  }, []);
   return (
     <section
       id="contact"

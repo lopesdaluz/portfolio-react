@@ -1,4 +1,5 @@
 import "../styles/skills.css";
+import { useEffect } from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -52,6 +53,9 @@ const technologies = [
 ];
 
 export default function Skills() {
+  useEffect(() => {
+    document.title = "Tatiana | Skills";
+  }, []);
   return (
     <section id="skills" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

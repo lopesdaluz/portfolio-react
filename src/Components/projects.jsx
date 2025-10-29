@@ -16,6 +16,7 @@ export default function Projects() {
       "StarWars",
       "PallyCopy",
     ];
+    document.title = "Tatiana | Projects";
     const fetchRepos = async () => {
       try {
         const response = await axios.get(
