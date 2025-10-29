@@ -1,12 +1,8 @@
 // import React from "react";
 
-import { useEffect } from "react";
 import "../styles/resume.css";
 
 export default function Resume() {
-  useEffect(() => {
-    document.title = "Tatiana | Resume";
-  }, []);
   return (
     <section id="resume" className="py-20 min-h-[80vh] flex items-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

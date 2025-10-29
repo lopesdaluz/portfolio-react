@@ -1,11 +1,7 @@
 import "../styles/main.css";
 import myPhoto from "../assets/126307010_1004261900086017_3906871137536479823_n.jpg";
-import { useEffect } from "react";
 
 export default function Main() {
-  useEffect(() => {
-    document.title = "Tatiana | About Me";
-  }, []);
   return (
     <section
       id="about"
