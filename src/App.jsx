@@ -27,7 +27,6 @@ import Skills from "./Components/skills";
 import Resume from "./Components/resume";
 import IntroSection from "./Components/introsection";
 import { useEffect } from "react";
-
 import { useRef } from "react";
 
 export default function App() {
