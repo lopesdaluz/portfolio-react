@@ -34,7 +34,7 @@ export default function Resume() {
 
         <div className="flex justify-center mt-8">
           <a
-            href="/resume2025.pdf"
+            href="/resume2026.pdf"
             download
             className="inline-flex items-center px-6 py-3 bg-primary/20 
                      hover:bg-primary/30 text-primary rounded-lg 
